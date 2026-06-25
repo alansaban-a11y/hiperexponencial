@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiperexponencial (HIPEX) — La cripto con dificultad hiperexponencial</title>
+  <meta name="description" content="HIPEX: 21M supply, Proof of Work, 10M en circulación. La alternativa a Bitcoin con seguridad exponencial.">
+  <meta property="og:title" content="Hiperexponencial (HIPEX)">
+  <meta property="og:description" content="10M HIPEX en circulación · 21M max · PoW · Dificultad hiperexponencial">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$HIPEX — Hiperexponencial">
+  <meta name="twitter:description" content="Nueva cripto PoW. 10M tokens. 21M max supply.">
+  <meta property="og:url" content="https://alansaban-a11y.github.io/hiperexponencial/">
+  <link rel="canonical" href="https://alansaban-a11y.github.io/hiperexponencial/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">HIPEX<span>∞</span></div>
+    <div class="nav-links">
+      <a href="#buy">Comprar</a>
+      <a href="#contract">Token</a>
+      <a href="#stats">Stats</a>
+      <a href="#share">Compartir</a>
+      <a href="whitepaper.html">Whitepaper</a>
+      <a href="https://github.com/alansaban-a11y/hiperexponencial" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badge">🚀 LANZADO HOY — 25 JUN 2026</div>
+    <h1>Hiperexponencial</h1>
+    <p class="tagline">Más segura que Bitcoin.<br>Dificultad que crece exponencialmente.<br><strong>10 millones ya en circulación.</strong></p>
+    <div class="hero-stats">
+      <div class="stat"><span class="val" id="supply">10M</span><span class="lbl">En circulación</span></div>
+      <div class="stat"><span class="val" id="max">21M</span><span class="lbl">Max Supply</span></div>
+      <div class="stat"><span class="val" id="height">—</span><span class="lbl">Bloque actual</span></div>
+      <div class="stat"><span class="val" id="reward">50</span><span class="lbl">HIPEX / bloque</span></div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn primary" href="#buy">Cómo conseguir HIPEX</a>
+      <a class="btn secondary" id="share-twitter" href="#" target="_blank">Compartir en X</a>
+    </div>
+  </header>
+
+  <section id="buy" class="section">
+    <h2>Cómo conseguir HIPEX hoy</h2>
+    <div class="trade-grid">
+      <div class="trade-card">
+        <h3>1. Miná HIPEX</h3>
+        <p>Descargá el nodo, creá wallet y miná bloques. Recompensa: 50 HIPEX/bloque.</p>
+        <code>github.com → hiperexponencial → Minar_Hipex.bat</code>
+      </div>
+      <div class="trade-card" id="dex-card">
+        <h3>2. Token ERC-20</h3>
+        <p id="dex-status">Desplegando en Polygon…</p>
+      </div>
+      <div class="trade-card">
+        <h3>3. P2P</h3>
+        <p>Contactá a la comunidad para compra directa. 10M tokens del fundador disponibles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contract" class="section">
+    <h2>Token &amp; Contrato</h2>
+    <div class="wallet-card" id="contract-box">
+      <div class="wallet-row"><label>Red nativa PoW</label><code>Hiperexponencial mainnet (nodo local)</code></div>
+      <div class="wallet-row"><label>ERC-20</label><code id="erc20-network">—</code></div>
+      <div class="wallet-row"><label>Contrato</label><code id="erc20-contract">—</code></div>
+      <div class="wallet-row"><label>Explorer</label><span id="erc20-explorer">—</span></div>
+    </div>
+  </section>
+
+  <section id="stats" class="section dark">
+    <h2>Estadísticas en vivo</h2>
+    <div class="grid" id="network-grid"></div>
+  </section>
+
+  <section id="share" class="section">
+    <h2>Ayudá a que el mundo conozca HIPEX</h2>
+    <p style="color:var(--muted);margin-bottom:1.5rem">Cada share suma. Copiá y publicá:</p>
+    <div class="wallet-card" id="tweet-box"></div>
+    <div class="hero-actions" style="margin-top:1.5rem">
+      <a class="btn primary" id="tweet-btn" href="#" target="_blank">Publicar en X / Twitter</a>
+      <a class="btn secondary" id="copy-tweet" href="#">Copiar texto</a>
+      <a class="btn secondary" id="reddit-btn" href="#" target="_blank">Post en Reddit</a>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <h2>¿Por qué HIPEX?</h2>
+    <div class="grid">
+      <div class="card"><div class="label">Como Bitcoin</div><div class="value">PoW · UTXO · 21M</div></div>
+      <div class="card"><div class="label">Mejor que Bitcoin</div><div class="value">Dificultad 2^epoch</div></div>
+      <div class="card"><div class="label">Escasez</div><div class="value">47% ya minado*</div></div>
+      <div class="card"><div class="label">Fundador</div><div class="value">10M HIPEX</div></div>
+    </div>
+    <p style="color:var(--muted);font-size:0.8rem;margin-top:1rem">*10M de 21M máximo ≈ 47% del supply total</p>
+  </section>
+
+  <footer>
+    <p><strong>Hiperexponencial (HIPEX)</strong> · Ticker: $HIPEX · Lanzamiento 25 Jun 2026</p>
+    <p><a href="https://github.com/alansaban-a11y/hiperexponencial" style="color:var(--accent)">github.com/alansaban-a11y/hiperexponencial</a></p>
+    <p class="disclaimer">Activo digital experimental. DYOR. No es asesoramiento financiero.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
