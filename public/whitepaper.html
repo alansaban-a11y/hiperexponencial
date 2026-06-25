@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitepaper — Hiperexponencial (HIPEX)</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .wp { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    .wp h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .wp h2 { margin: 2rem 0 1rem; color: var(--accent); }
+    .wp p, .wp li { color: var(--muted); margin-bottom: 0.75rem; }
+    .wp ul { padding-left: 1.5rem; }
+    .wp table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    .wp th, .wp td { border: 1px solid var(--border); padding: 0.5rem; text-align: left; }
+    .back { display: inline-block; margin-bottom: 2rem; color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wp">
+    <a class="back" href="index.html">← Volver</a>
+    <h1>Hiperexponencial (HIPEX)</h1>
+    <p><em>Whitepaper v1.0 — Junio 2026</em></p>
+
+    <h2>Resumen</h2>
+    <p>Hiperexponencial es una criptomoneda descentralizada basada en Proof of Work, modelo UTXO y firmas ECDSA secp256k1, con un mecanismo de dificultad hiperexponencial que endurece la red más rápido que Bitcoin.</p>
+
+    <h2>Parámetros</h2>
+    <table>
+      <tr><th>Parámetro</th><th>Valor</th></tr>
+      <tr><td>Ticker</td><td>HIPEX</td></tr>
+      <tr><td>Suministro máximo</td><td>21,000,000</td></tr>
+      <tr><td>Recompensa inicial</td><td>50 HIPEX</td></tr>
+      <tr><td>Halving</td><td>Cada 210,000 bloques</td></tr>
+      <tr><td>Algoritmo hash</td><td>SHA-256 (doble)</td></tr>
+      <tr><td>Tiempo de bloque objetivo</td><td>10 minutos</td></tr>
+      <tr><td>Decimales</td><td>8</td></tr>
+    </table>
+
+    <h2>Dificultad hiperexponencial</h2>
+    <p>La dificultad se calcula como: <code>base + epoch + 2^epoch</code>, donde <code>epoch = altura / 2016</code>. Esto garantiza que la seguridad de la red escale exponencialmente con el tiempo.</p>
+
+    <h2>Token ERC-20 (Ethereum)</h2>
+    <p>Para liquidez global, HIPEX se despliega como token ERC-20 en Ethereum/Polygon, permitiendo trading en DEXes (Uniswap, QuickSwap) y listados en agregadores de precios.</p>
+
+    <h2>Distribución</h2>
+    <ul>
+      <li>Fundador: 10,000,000 HIPEX (asignación inicial)</li>
+      <li>Minado PoW: resto hasta 21M</li>
+      <li>Reserva para liquidez DEX: recomendado 5-10%</li>
+    </ul>
+
+    <h2>Roadmap</h2>
+    <ul>
+      <li>Q2 2026: Mainnet nativa + Explorer + ERC-20</li>
+      <li>Q3 2026: Liquidez DEX + CoinGecko/CMC</li>
+      <li>Q4 2026: CEX + Puente cross-chain</li>
+      <li>2027: Pagos e integraciones comerciales</li>
+    </ul>
+
+    <h2>Descargo</h2>
+    <p>HIPEX es un activo digital experimental. Su valor depende exclusivamente de la oferta, demanda y adopción del mercado. No constituye asesoramiento financiero.</p>
+  </div>
+</body>
+</html>
