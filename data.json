@@ -1,0 +1,10 @@
+{
+  "name": "Hiperexponencial",
+  "ticker": "HIPEX",
+  "height": 2,
+  "total_mined_coins": 10000100.0,
+  "max_supply": 21000000.0,
+  "block_reward": 50.0,
+  "founder_balance": 10000050.0,
+  "launch_url": "https://alansaban-a11y.github.io/hiperexponencial/"
+}
