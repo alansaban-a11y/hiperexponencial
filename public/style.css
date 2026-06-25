@@ -1,0 +1,143 @@
+:root {
+  --bg: #0a0e17;
+  --surface: #111827;
+  --surface2: #1a2235;
+  --accent: #f59e0b;
+  --accent2: #8b5cf6;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --green: #10b981;
+  --border: #1e293b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: rgba(10,14,23,0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.logo { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; }
+.logo span { color: var(--accent); }
+
+.nav-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+.nav-links a:hover { color: var(--accent); }
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  background: radial-gradient(ellipse at 50% 0%, rgba(139,92,246,0.15), transparent 60%),
+              radial-gradient(ellipse at 80% 50%, rgba(245,158,11,0.08), transparent 50%);
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--text), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.tagline { color: var(--muted); font-size: 1.1rem; margin-bottom: 2.5rem; }
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.stat .val { display: block; font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+.stat .lbl { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+.hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+.btn {
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.15s;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn.primary { background: var(--accent); color: #000; }
+.btn.secondary { border: 1px solid var(--border); color: var(--text); }
+
+.section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+.section.dark { background: var(--surface); max-width: 100%; }
+.section.dark > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
+.section h2 { font-size: 1.8rem; margin-bottom: 2rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.grid .card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+.grid .card .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; }
+.grid .card .value { font-size: 1.4rem; font-weight: 700; margin-top: 0.25rem; }
+
+.wallet-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+}
+.wallet-row { margin-bottom: 1.25rem; }
+.wallet-row label { display: block; font-size: 0.75rem; color: var(--muted); text-transform: uppercase; margin-bottom: 0.25rem; }
+.wallet-row code { font-size: 0.85rem; word-break: break-all; }
+
+.trade-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.trade-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.trade-card h3 { margin-bottom: 0.5rem; color: var(--accent); }
+.trade-card p { color: var(--muted); font-size: 0.9rem; }
+.trade-card code { display: block; margin-top: 0.75rem; font-size: 0.75rem; color: var(--accent2); }
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.disclaimer { margin-top: 0.5rem; font-size: 0.75rem; }
