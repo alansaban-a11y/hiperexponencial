@@ -10,19 +10,21 @@
   "block_reward": 50.0,
   "founder_address": "1G7MVDmfemC9Yd6ftocucn2zxrTrAp7uuG",
   "founder_balance": 10000050.0,
-  "launch_url": "https://alansaban-a11y.github.io/hiperexponencial/",
+  "updated_at": "2026-06-26T14:26:58.415Z",
   "erc20": {
     "network": "localhost",
     "chainId": "31337",
-    "contract": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "contract": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
     "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
     "founder": "0x3455295CA246cC75B40d4Edf0E3638619336e543",
     "founderAmount": "1000000000000000",
-    "totalSupply": "1000000000000000",
+    "onChainTotalSupply": "1000000000000000",
+    "totalSupply": "2100000000000000",
+    "maxSupply": "2100000000000000",
     "symbol": "HIPEX",
     "name": "Hiperexponencial",
     "decimals": 8,
-    "deployedAt": "2026-06-24T23:56:32.293Z",
+    "deployedAt": "2026-06-26T14:26:58.415Z",
     "explorer": "http://localhost:8545 (local)"
   }
 }
